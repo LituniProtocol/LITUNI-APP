@@ -1,0 +1,688 @@
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		692884F723C87E3D00FD4FAA /* FreeTokenWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692884F523C87E3D00FD4FAA /* FreeTokenWindowController.swift */; };
+		692884F823C87E3D00FD4FAA /* FreeTokenWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692884F623C87E3D00FD4FAA /* FreeTokenWindowController.xib */; };
+		69899A7C257879FC009BF918 /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69899A692578769E009BF918 /* GCDWebServers.framework */; };
+		69899A7D257879FC009BF918 /* GCDWebServers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69899A692578769E009BF918 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69899A952578AB82009BF918 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69899A91257896CE009BF918 /* SwiftyJSON.framework */; };
+		69899A962578AB82009BF918 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69899A91257896CE009BF918 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C6288912380236F00069E08 /* gfw_test.js in Resources */ = {isa = PBXBuildFile; fileRef = 7C6288902380236F00069E08 /* gfw_test.js */; };
+		7C7A28C923C05E890063CA7B /* ExtendToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A28C823C05E890063CA7B /* ExtendToken.swift */; };
+		7CC03A71237ADF3E00233E51 /* SysLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC03A6F237ADF3E00233E51 /* SysLogController.swift */; };
+		7CC03A72237ADF3E00233E51 /* SysLogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC03A70237ADF3E00233E51 /* SysLogController.xib */; };
+		BB10824323406B31004CBB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10824223406B31004CBB54 /* AppDelegate.swift */; };
+		BB10824523406B37004CBB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB10824423406B37004CBB54 /* Assets.xcassets */; };
+		BB10824823406B37004CBB54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB10824623406B37004CBB54 /* MainMenu.xib */; };
+		BB10825223406B76004CBB54 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10825123406B76004CBB54 /* MenuController.swift */; };
+		BB603C782374FDA900C95CA5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB603C762374FDA900C95CA5 /* Setting.swift */; };
+		BB603C792374FDA900C95CA5 /* Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB603C772374FDA900C95CA5 /* Setting.xib */; };
+		BB72ACF5237CFF6B0082BA02 /* MinerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72ACF4237CFF6B0082BA02 /* MinerData.swift */; };
+		BBA7CCFB237D366D002A5F44 /* MinerSelectCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7CCF9237D366D002A5F44 /* MinerSelectCtrl.swift */; };
+		BBA7CCFC237D366D002A5F44 /* MinerSelectCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA7CCFA237D366D002A5F44 /* MinerSelectCtrl.xib */; };
+		BBD7122E234093C9003C80E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD7122C234093C9003C80E9 /* main.m */; };
+		BBD7123A234096FA003C80E9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71232234096FA003C80E9 /* Service.swift */; };
+		BBD7123B234096FA003C80E9 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71233234096FA003C80E9 /* ServiceError.swift */; };
+		BBD7123C234096FA003C80E9 /* SysProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71234234096FA003C80E9 /* SysProxyHelper.swift */; };
+		BBD7123D234096FA003C80E9 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71235234096FA003C80E9 /* Wallet.swift */; };
+		BBD7123E234096FA003C80E9 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71236234096FA003C80E9 /* utils.swift */; };
+		BBD71240234096FA003C80E9 /* MinerPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71238234096FA003C80E9 /* MinerPool.swift */; };
+		BBD71241234096FA003C80E9 /* PacServerBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD71239234096FA003C80E9 /* PacServerBean.swift */; };
+		BBD71246234097E3003C80E9 /* dss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD71245234097E3003C80E9 /* dss.a */; };
+		BBD7124B2340995A003C80E9 /* fix_dir_owner.sh in Resources */ = {isa = PBXBuildFile; fileRef = BBD712482340995A003C80E9 /* fix_dir_owner.sh */; };
+		BBD7124C2340995A003C80E9 /* gfw.js in Resources */ = {isa = PBXBuildFile; fileRef = BBD712492340995A003C80E9 /* gfw.js */; };
+		BBD7124D2340995A003C80E9 /* install_proxy_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = BBD7124A2340995A003C80E9 /* install_proxy_helper.sh */; };
+		BBD7124E23409978003C80E9 /* sysproxyconfig in Resources */ = {isa = PBXBuildFile; fileRef = BBD71224234093AC003C80E9 /* sysproxyconfig */; };
+		BBD7125B23409B13003C80E9 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD7125123409B12003C80E9 /* PasswordViewController.xib */; };
+		BBD7125C23409B13003C80E9 /* WalletController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD7125223409B12003C80E9 /* WalletController.xib */; };
+		BBD7125D23409B13003C80E9 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7125323409B12003C80E9 /* PasswordViewController.swift */; };
+		BBD7125E23409B13003C80E9 /* ShopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7125423409B12003C80E9 /* ShopingViewController.swift */; };
+		BBD7125F23409B13003C80E9 /* PacketMarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7125523409B12003C80E9 /* PacketMarketController.swift */; };
+		BBD7126023409B13003C80E9 /* ShopingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD7125623409B12003C80E9 /* ShopingViewController.xib */; };
+		BBD7126123409B13003C80E9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7125723409B12003C80E9 /* TransferViewController.swift */; };
+		BBD7126223409B13003C80E9 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD7125823409B12003C80E9 /* TransferViewController.xib */; };
+		BBD7126323409B13003C80E9 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7125923409B12003C80E9 /* WalletController.swift */; };
+		BBD7126423409B13003C80E9 /* PacketMarketController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD7125A23409B13003C80E9 /* PacketMarketController.xib */; };
+		BBDF613C237815C5006E7E30 /* UserDataLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDF613B237815C5006E7E30 /* UserDataLocal.swift */; };
+		BBDF613F23781DA2006E7E30 /* UserDataStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDF613D23781DA2006E7E30 /* UserDataStatic.swift */; };
+		BBDF614023781DA2006E7E30 /* UserDataStatic.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDF613E23781DA2006E7E30 /* UserDataStatic.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBD7124F23409993003C80E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB10823723406B31004CBB54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD71223234093AC003C80E9;
+			remoteInfo = sysproxyconfig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69899A7E257879FC009BF918 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69899A962578AB82009BF918 /* SwiftyJSON.framework in Embed Frameworks */,
+				69899A7D257879FC009BF918 /* GCDWebServers.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD71222234093AC003C80E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		692884F523C87E3D00FD4FAA /* FreeTokenWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTokenWindowController.swift; sourceTree = "<group>"; };
+		692884F623C87E3D00FD4FAA /* FreeTokenWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeTokenWindowController.xib; sourceTree = "<group>"; };
+		69899A692578769E009BF918 /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/Mac/GCDWebServers.framework; sourceTree = "<group>"; };
+		69899A91257896CE009BF918 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		7C6288902380236F00069E08 /* gfw_test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = gfw_test.js; sourceTree = "<group>"; };
+		7C7A28C823C05E890063CA7B /* ExtendToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendToken.swift; sourceTree = "<group>"; };
+		7CC03A6F237ADF3E00233E51 /* SysLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysLogController.swift; sourceTree = "<group>"; };
+		7CC03A70237ADF3E00233E51 /* SysLogController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SysLogController.xib; sourceTree = "<group>"; };
+		BB10823F23406B31004CBB54 /* Pirate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pirate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB10824223406B31004CBB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB10824423406B37004CBB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB10824723406B37004CBB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB10824923406B37004CBB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB10825123406B76004CBB54 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		BB603C762374FDA900C95CA5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		BB603C772374FDA900C95CA5 /* Setting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Setting.xib; sourceTree = "<group>"; };
+		BB72ACF4237CFF6B0082BA02 /* MinerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinerData.swift; sourceTree = "<group>"; };
+		BBA7CCF9237D366D002A5F44 /* MinerSelectCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinerSelectCtrl.swift; sourceTree = "<group>"; };
+		BBA7CCFA237D366D002A5F44 /* MinerSelectCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinerSelectCtrl.xib; sourceTree = "<group>"; };
+		BBD71224234093AC003C80E9 /* sysproxyconfig */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sysproxyconfig; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD7122C234093C9003C80E9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBD7122D234093C9003C80E9 /* SysProxyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysProxyConfig.h; sourceTree = "<group>"; };
+		BBD71232234096FA003C80E9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BBD71233234096FA003C80E9 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		BBD71234234096FA003C80E9 /* SysProxyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SysProxyHelper.swift; sourceTree = "<group>"; };
+		BBD71235234096FA003C80E9 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		BBD71236234096FA003C80E9 /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		BBD71238234096FA003C80E9 /* MinerPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinerPool.swift; sourceTree = "<group>"; };
+		BBD71239234096FA003C80E9 /* PacServerBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacServerBean.swift; sourceTree = "<group>"; };
+		BBD71242234097AD003C80E9 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
+		BBD71243234097E3003C80E9 /* callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
+		BBD71244234097E3003C80E9 /* dss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dss.h; sourceTree = "<group>"; };
+		BBD71245234097E3003C80E9 /* dss.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = dss.a; sourceTree = "<group>"; };
+		BBD712482340995A003C80E9 /* fix_dir_owner.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fix_dir_owner.sh; sourceTree = "<group>"; };
+		BBD712492340995A003C80E9 /* gfw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = gfw.js; sourceTree = "<group>"; };
+		BBD7124A2340995A003C80E9 /* install_proxy_helper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_proxy_helper.sh; sourceTree = "<group>"; };
+		BBD7125123409B12003C80E9 /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		BBD7125223409B12003C80E9 /* WalletController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletController.xib; sourceTree = "<group>"; };
+		BBD7125323409B12003C80E9 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		BBD7125423409B12003C80E9 /* ShopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopingViewController.swift; sourceTree = "<group>"; };
+		BBD7125523409B12003C80E9 /* PacketMarketController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketMarketController.swift; sourceTree = "<group>"; };
+		BBD7125623409B12003C80E9 /* ShopingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopingViewController.xib; sourceTree = "<group>"; };
+		BBD7125723409B12003C80E9 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		BBD7125823409B12003C80E9 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		BBD7125923409B12003C80E9 /* WalletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
+		BBD7125A23409B13003C80E9 /* PacketMarketController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PacketMarketController.xib; sourceTree = "<group>"; };
+		BBDF613B237815C5006E7E30 /* UserDataLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataLocal.swift; sourceTree = "<group>"; };
+		BBDF613D23781DA2006E7E30 /* UserDataStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStatic.swift; sourceTree = "<group>"; };
+		BBDF613E23781DA2006E7E30 /* UserDataStatic.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataStatic.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB10823C23406B31004CBB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD71246234097E3003C80E9 /* dss.a in Frameworks */,
+				69899A7C257879FC009BF918 /* GCDWebServers.framework in Frameworks */,
+				69899A952578AB82009BF918 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD71221234093AC003C80E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7428D099AB984B1657E0A53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69899A91257896CE009BF918 /* SwiftyJSON.framework */,
+				69899A692578769E009BF918 /* GCDWebServers.framework */,
+				BBD71243234097E3003C80E9 /* callback.h */,
+				BBD71245234097E3003C80E9 /* dss.a */,
+				BBD71244234097E3003C80E9 /* dss.h */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB10823623406B31004CBB54 = {
+			isa = PBXGroup;
+			children = (
+				BB10824123406B31004CBB54 /* Pirate */,
+				BBD71225234093AC003C80E9 /* sysproxyconfig */,
+				BB10824023406B31004CBB54 /* Products */,
+				7428D099AB984B1657E0A53E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB10824023406B31004CBB54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB10823F23406B31004CBB54 /* Pirate.app */,
+				BBD71224234093AC003C80E9 /* sysproxyconfig */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB10824123406B31004CBB54 /* Pirate */ = {
+			isa = PBXGroup;
+			children = (
+				BBD712472340995A003C80E9 /* scripts */,
+				BBD71242234097AD003C80E9 /* module.modulemap */,
+				BBD7123123409642003C80E9 /* service */,
+				BB10825023406B5C004CBB54 /* UI */,
+				BB10824223406B31004CBB54 /* AppDelegate.swift */,
+				BB10824423406B37004CBB54 /* Assets.xcassets */,
+				BB10824923406B37004CBB54 /* Info.plist */,
+			);
+			path = Pirate;
+			sourceTree = "<group>";
+		};
+		BB10825023406B5C004CBB54 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BB10825123406B76004CBB54 /* MenuController.swift */,
+				BB10824623406B37004CBB54 /* MainMenu.xib */,
+				BBD7125523409B12003C80E9 /* PacketMarketController.swift */,
+				BBD7125A23409B13003C80E9 /* PacketMarketController.xib */,
+				BBD7125323409B12003C80E9 /* PasswordViewController.swift */,
+				BBD7125123409B12003C80E9 /* PasswordViewController.xib */,
+				BBD7125423409B12003C80E9 /* ShopingViewController.swift */,
+				BBD7125623409B12003C80E9 /* ShopingViewController.xib */,
+				BBD7125723409B12003C80E9 /* TransferViewController.swift */,
+				BBD7125823409B12003C80E9 /* TransferViewController.xib */,
+				BBD7125923409B12003C80E9 /* WalletController.swift */,
+				BBD7125223409B12003C80E9 /* WalletController.xib */,
+				BB603C762374FDA900C95CA5 /* Setting.swift */,
+				BB603C772374FDA900C95CA5 /* Setting.xib */,
+				BBDF613D23781DA2006E7E30 /* UserDataStatic.swift */,
+				BBDF613E23781DA2006E7E30 /* UserDataStatic.xib */,
+				7CC03A6F237ADF3E00233E51 /* SysLogController.swift */,
+				7CC03A70237ADF3E00233E51 /* SysLogController.xib */,
+				BBA7CCF9237D366D002A5F44 /* MinerSelectCtrl.swift */,
+				BBA7CCFA237D366D002A5F44 /* MinerSelectCtrl.xib */,
+				692884F523C87E3D00FD4FAA /* FreeTokenWindowController.swift */,
+				692884F623C87E3D00FD4FAA /* FreeTokenWindowController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BBD71225234093AC003C80E9 /* sysproxyconfig */ = {
+			isa = PBXGroup;
+			children = (
+				BBD7122C234093C9003C80E9 /* main.m */,
+				BBD7122D234093C9003C80E9 /* SysProxyConfig.h */,
+			);
+			path = sysproxyconfig;
+			sourceTree = "<group>";
+		};
+		BBD7123123409642003C80E9 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				BB72ACF4237CFF6B0082BA02 /* MinerData.swift */,
+				BBD71238234096FA003C80E9 /* MinerPool.swift */,
+				BBDF613B237815C5006E7E30 /* UserDataLocal.swift */,
+				BBD71239234096FA003C80E9 /* PacServerBean.swift */,
+				BBD71232234096FA003C80E9 /* Service.swift */,
+				BBD71233234096FA003C80E9 /* ServiceError.swift */,
+				BBD71234234096FA003C80E9 /* SysProxyHelper.swift */,
+				BBD71236234096FA003C80E9 /* utils.swift */,
+				BBD71235234096FA003C80E9 /* Wallet.swift */,
+				7C7A28C823C05E890063CA7B /* ExtendToken.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		BBD712472340995A003C80E9 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				BBD712482340995A003C80E9 /* fix_dir_owner.sh */,
+				7C6288902380236F00069E08 /* gfw_test.js */,
+				BBD712492340995A003C80E9 /* gfw.js */,
+				BBD7124A2340995A003C80E9 /* install_proxy_helper.sh */,
+			);
+			path = scripts;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB10823E23406B31004CBB54 /* Pirate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB10824D23406B37004CBB54 /* Build configuration list for PBXNativeTarget "Pirate" */;
+			buildPhases = (
+				BB10823B23406B31004CBB54 /* Sources */,
+				BB10823C23406B31004CBB54 /* Frameworks */,
+				BB10823D23406B31004CBB54 /* Resources */,
+				69899A7E257879FC009BF918 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBD7125023409993003C80E9 /* PBXTargetDependency */,
+			);
+			name = Pirate;
+			productName = Pirate;
+			productReference = BB10823F23406B31004CBB54 /* Pirate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBD71223234093AC003C80E9 /* sysproxyconfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD7122A234093AC003C80E9 /* Build configuration list for PBXNativeTarget "sysproxyconfig" */;
+			buildPhases = (
+				BBD71220234093AC003C80E9 /* Sources */,
+				BBD71221234093AC003C80E9 /* Frameworks */,
+				BBD71222234093AC003C80E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sysproxyconfig;
+			productName = sysproxyconfig;
+			productReference = BBD71224234093AC003C80E9 /* sysproxyconfig */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB10823723406B31004CBB54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = hyperorchid;
+				TargetAttributes = {
+					BB10823E23406B31004CBB54 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					BBD71223234093AC003C80E9 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = BB10823A23406B31004CBB54 /* Build configuration list for PBXProject "Pirate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB10823623406B31004CBB54;
+			productRefGroup = BB10824023406B31004CBB54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB10823E23406B31004CBB54 /* Pirate */,
+				BBD71223234093AC003C80E9 /* sysproxyconfig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB10823D23406B31004CBB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA7CCFC237D366D002A5F44 /* MinerSelectCtrl.xib in Resources */,
+				BBD7124E23409978003C80E9 /* sysproxyconfig in Resources */,
+				692884F823C87E3D00FD4FAA /* FreeTokenWindowController.xib in Resources */,
+				BBD7126023409B13003C80E9 /* ShopingViewController.xib in Resources */,
+				BB10824523406B37004CBB54 /* Assets.xcassets in Resources */,
+				BBD7126223409B13003C80E9 /* TransferViewController.xib in Resources */,
+				BBD7126423409B13003C80E9 /* PacketMarketController.xib in Resources */,
+				BBD7125C23409B13003C80E9 /* WalletController.xib in Resources */,
+				7CC03A72237ADF3E00233E51 /* SysLogController.xib in Resources */,
+				BB603C792374FDA900C95CA5 /* Setting.xib in Resources */,
+				7C6288912380236F00069E08 /* gfw_test.js in Resources */,
+				BBD7124C2340995A003C80E9 /* gfw.js in Resources */,
+				BBD7124B2340995A003C80E9 /* fix_dir_owner.sh in Resources */,
+				BB10824823406B37004CBB54 /* MainMenu.xib in Resources */,
+				BBDF614023781DA2006E7E30 /* UserDataStatic.xib in Resources */,
+				BBD7124D2340995A003C80E9 /* install_proxy_helper.sh in Resources */,
+				BBD7125B23409B13003C80E9 /* PasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB10823B23406B31004CBB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD7123D234096FA003C80E9 /* Wallet.swift in Sources */,
+				BBD7126123409B13003C80E9 /* TransferViewController.swift in Sources */,
+				BBD7125E23409B13003C80E9 /* ShopingViewController.swift in Sources */,
+				BB72ACF5237CFF6B0082BA02 /* MinerData.swift in Sources */,
+				7CC03A71237ADF3E00233E51 /* SysLogController.swift in Sources */,
+				BBD7126323409B13003C80E9 /* WalletController.swift in Sources */,
+				BBD7123E234096FA003C80E9 /* utils.swift in Sources */,
+				BBD7123B234096FA003C80E9 /* ServiceError.swift in Sources */,
+				BBD7125F23409B13003C80E9 /* PacketMarketController.swift in Sources */,
+				BBD7125D23409B13003C80E9 /* PasswordViewController.swift in Sources */,
+				692884F723C87E3D00FD4FAA /* FreeTokenWindowController.swift in Sources */,
+				BBD71240234096FA003C80E9 /* MinerPool.swift in Sources */,
+				BB10825223406B76004CBB54 /* MenuController.swift in Sources */,
+				BBA7CCFB237D366D002A5F44 /* MinerSelectCtrl.swift in Sources */,
+				BBDF613F23781DA2006E7E30 /* UserDataStatic.swift in Sources */,
+				BBD71241234096FA003C80E9 /* PacServerBean.swift in Sources */,
+				7C7A28C923C05E890063CA7B /* ExtendToken.swift in Sources */,
+				BBDF613C237815C5006E7E30 /* UserDataLocal.swift in Sources */,
+				BB10824323406B31004CBB54 /* AppDelegate.swift in Sources */,
+				BBD7123C234096FA003C80E9 /* SysProxyHelper.swift in Sources */,
+				BB603C782374FDA900C95CA5 /* Setting.swift in Sources */,
+				BBD7123A234096FA003C80E9 /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD71220234093AC003C80E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD7122E234093C9003C80E9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBD7125023409993003C80E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBD71223234093AC003C80E9 /* sysproxyconfig */;
+			targetProxy = BBD7124F23409993003C80E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB10824623406B37004CBB54 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB10824723406B37004CBB54 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB10824B23406B37004CBB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB10824C23406B37004CBB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB10824E23406B37004CBB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pirate/Pirate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Pirate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = comd.hyperorchid.Pirate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB10824F23406B37004CBB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pirate/Pirate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Pirate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = comd.hyperorchid.Pirate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BBD71228234093AC003C80E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BBD71229234093AC003C80E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB10823A23406B31004CBB54 /* Build configuration list for PBXProject "Pirate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB10824B23406B37004CBB54 /* Debug */,
+				BB10824C23406B37004CBB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB10824D23406B37004CBB54 /* Build configuration list for PBXNativeTarget "Pirate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB10824E23406B37004CBB54 /* Debug */,
+				BB10824F23406B37004CBB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD7122A234093AC003C80E9 /* Build configuration list for PBXNativeTarget "sysproxyconfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD71228234093AC003C80E9 /* Debug */,
+				BBD71229234093AC003C80E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB10823723406B31004CBB54 /* Project object */;
